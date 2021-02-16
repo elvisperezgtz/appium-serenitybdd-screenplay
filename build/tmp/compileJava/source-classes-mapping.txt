@@ -1,0 +1,55 @@
+gt/com/tigo/qa/tasks/Configurar.java
+ gt.com.tigo.qa.tasks.Configurar
+gt/com/tigo/qa/utils/enums/Buzones.java
+ gt.com.tigo.qa.utils.enums.Buzones
+gt/com/tigo/qa/utils/enums/Distancia.java
+ gt.com.tigo.qa.utils.enums.Distancia
+gt/com/tigo/qa/userinterfaces/MenuUsurioUI.java
+ gt.com.tigo.qa.userinterfaces.MenuUsurioUI
+gt/com/tigo/qa/interactions/Scroll.java
+ gt.com.tigo.qa.interactions.Scroll
+gt/com/tigo/qa/userinterfaces/ChromeUI.java
+ gt.com.tigo.qa.userinterfaces.ChromeUI
+gt/com/tigo/qa/tasks/AbrirElNavegador.java
+ gt.com.tigo.qa.tasks.AbrirElNavegador
+gt/com/tigo/qa/userinterfaces/LoginUI.java
+ gt.com.tigo.qa.userinterfaces.LoginUI
+gt/com/tigo/qa/userinterfaces/HomeAppUI.java
+ gt.com.tigo.qa.userinterfaces.HomeAppUI
+gt/com/tigo/qa/tasks/LaUrl.java
+ gt.com.tigo.qa.tasks.LaUrl
+gt/com/tigo/qa/questions/ElSaludo.java
+ gt.com.tigo.qa.questions.ElSaludo
+gt/com/tigo/qa/tasks/Asignar.java
+ gt.com.tigo.qa.tasks.Asignar
+gt/com/tigo/qa/interactions/Select.java
+ gt.com.tigo.qa.interactions.Select
+gt/com/tigo/qa/tasks/Recuperar.java
+ gt.com.tigo.qa.tasks.Recuperar
+gt/com/tigo/qa/tasks/Solicitar.java
+ gt.com.tigo.qa.tasks.Solicitar
+gt/com/tigo/qa/interactions/Close.java
+ gt.com.tigo.qa.interactions.Close
+gt/com/tigo/qa/interactions/Abrir.java
+ gt.com.tigo.qa.interactions.Abrir
+gt/com/tigo/qa/utils/actions/actions.java
+ gt.com.tigo.qa.utils.actions.actions
+ gt.com.tigo.qa.utils.actions.actions$1
+gt/com/tigo/qa/interactions/Nueva.java
+ gt.com.tigo.qa.interactions.Nueva
+gt/com/tigo/qa/userinterfaces/TigoResetUI.java
+ gt.com.tigo.qa.userinterfaces.TigoResetUI
+gt/com/tigo/qa/utils/correos/PasswordGenerator.java
+ gt.com.tigo.qa.utils.correos.PasswordGenerator
+gt/com/tigo/qa/tasks/Quitar.java
+ gt.com.tigo.qa.tasks.Quitar
+gt/com/tigo/qa/utils/enums/Direccion.java
+ gt.com.tigo.qa.utils.enums.Direccion
+gt/com/tigo/qa/tasks/Establecer.java
+ gt.com.tigo.qa.tasks.Establecer
+gt/com/tigo/qa/tasks/IniciarSesion.java
+ gt.com.tigo.qa.tasks.IniciarSesion
+gt/com/tigo/qa/models/Credenciales.java
+ gt.com.tigo.qa.models.Credenciales
+gt/com/tigo/qa/utils/correos/ManejadorDeCorreos.java
+ gt.com.tigo.qa.utils.correos.ManejadorDeCorreos
