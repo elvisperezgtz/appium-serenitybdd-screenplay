@@ -1,0 +1,14 @@
+
+O
+java:S1172)"4Remove this unused method parameter "elementFacade".(÷ÅÀœşÿÿÿÿ
+t
+java:S1192 "^Define a constant instead of duplicating this literal "com.android.chrome:id/url_bar" 3 times.(ù¹ÄÅ
+J
+java:S3740""/Provide the parametrized type for this generic.(½§¥üÿÿÿÿ
+f
+java:S1301N"KReplace this "switch" statement by "if" statements to increase readability.(ôáìîûÿÿÿÿ
+E
+java:S3740D"/Provide the parametrized type for this generic.(€‘˜
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(«¾©ƒ
+E
+java:S3740D"/Provide the parametrized type for this generic.(€‘˜

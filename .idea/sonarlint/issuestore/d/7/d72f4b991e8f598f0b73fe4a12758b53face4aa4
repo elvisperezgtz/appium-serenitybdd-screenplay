@@ -1,0 +1,39 @@
+
+N	java:S106P"9Replace this use of System.out or System.err by a logger.(Ëá²Ì
+M
+java:S1197K"8Move the array designator from the variable to the type.(ëÇäb
+Y
+java:S2259e"CA "NullPointerException" could be thrown; "email" is nullable here.(áöÇõ
+\
+java:S2142~"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+T
+java:S1197š"8Move the array designator from the variable to the type.(‚¿Ã×úÿÿÿÿ
+D
+java:S1068".Remove this unused "textIsHtml" private field.(ĞÏ‡‚
+1
+java:S3626("Remove this redundant jump.(ÉŠ©ƒ
+[
+java:S2147~"ECombine this catch with the one at line 124, which has the same body.(ä ¹€
+\
+java:S2147€"ECombine this catch with the one at line 124, which has the same body.(ï­£Ä
+\
+java:S2147©"ECombine this catch with the one at line 167, which has the same body.(°±âİ
+b
+java:S2259¢"KA "NullPointerException" could be thrown; "extraerTexto()" can return null.(ª¡¾û
+o
+java:S1450"YRemove the "textIsHtml" field and declare it as a local variable in the relevant methods.(ĞÏ‡‚
+N	java:S106u"9Replace this use of System.out or System.err by a logger.(´—ÖÃ
+d
+java:S2095ˆ"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(äú’ø
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(£—Ş
+_
+java:S2259Ÿ"CA "NullPointerException" could be thrown; "email" is nullable here.(·¨¶¸ıÿÿÿÿ
+S
+java:S2589¦"7Remove this expression which always evaluates to "true"(ôÇ—Ãıÿÿÿÿ
+c
+java:S2095B"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(äú’ø
+h
+java:S2259h"M"NullPointerException" will be thrown when invoking method "extraerCodigo()".(ü›«”øÿÿÿÿ
+Z
+java:S2147X"DCombine this catch with the one at line 86, which has the same body.(ï­£Ä
