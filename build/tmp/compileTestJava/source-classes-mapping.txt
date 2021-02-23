@@ -1,4 +1,0 @@
-gt/com/tigo/qa/stepsdefinitions/LoginSteps.java
- gt.com.tigo.qa.stepsdefinitions.LoginSteps
-gt/com/tigo/qa/runners/Login.java
- gt.com.tigo.qa.runners.Login

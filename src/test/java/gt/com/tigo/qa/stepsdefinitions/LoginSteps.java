@@ -9,6 +9,7 @@ import gt.com.tigo.qa.interactions.Abrir;
 import gt.com.tigo.qa.models.Credenciales;
 import gt.com.tigo.qa.tasks.Asignar;
 import gt.com.tigo.qa.tasks.IniciarSesion;
+import gt.com.tigo.qa.tasks.SeleccionarLinea;
 import gt.com.tigo.qa.tasks.Solicitar;
 import gt.com.tigo.qa.userinterfaces.HomeAppUI;
 import gt.com.tigo.qa.userinterfaces.LoginUI;
@@ -48,11 +49,9 @@ public class LoginSteps {
 
     @When("^El inicia sesion en la app por medio del correo electronico$")
     public void elIniciaSesionEnLaAppPorMedioDelCorreoElectronico(List<Credenciales> credenciales) {
-
         theActorInTheSpotlight().attemptsTo(
                 IniciarSesion.enLaAplicacion(credenciales.get(0).getCorreo(), credenciales.get(0).getContrasenia())
         );
-
     }
 
     @When("^El solicita el cambio de contrasenia para el correo electronico (.*)$")
@@ -81,5 +80,9 @@ public class LoginSteps {
         theActorInTheSpotlight().attemptsTo(
                 Ensure.that(HomeAppUI.ICONO_PERFIL.waitingForNoMoreThan(ofSeconds(10))).isDisplayed()
         );
+    }
+    @When("^selecciona la linea movil (.*)")
+    public void seleccionaLaLineaMovilPrepago(String linea) {
+        theActorInTheSpotlight().attemptsTo(SeleccionarLinea.seleccionarLinea(linea));
     }
 }
