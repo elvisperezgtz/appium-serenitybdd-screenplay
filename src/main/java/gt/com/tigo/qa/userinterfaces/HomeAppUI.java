@@ -10,7 +10,7 @@ public class HomeAppUI {
             .locatedBy("//*[contains(@text,'{0}')]");
 
     public final static Target LISTADO_LINEA = Target.the("Listado de lineas")
-            .locatedBy("//*[@resource-id=\"openAccountsMoviles0\"]");
+            .locatedBy("//android.view.View[contains(@text,'Prepago') or contains(@text,'Postpago') or contains(@text, 'Controlado') or contains(@text,'brido')]");
 
     public final static Target MENU_INFERIOR = Target.the("Tab de opciones")
             .locatedBy("//android.view.View[2]/android.widget.TabWidget");

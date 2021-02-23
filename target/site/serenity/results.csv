@@ -1,4 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Login","Inicio de sesión exitoso","SUCCESS","2021-02-19T12:25:45.6177914-05:00[America/Bogota]","0.0","42.89"
 "Login","Inicio de sesión exitoso por Header Enrichment en Tigo en Línea App","ERROR","2021-02-22T10:09:28.8502994-05:00[America/Bogota]","0.0","51.13"
 "Login","Inicio de sesión exitoso con OTP en Tigo en Línea App","ERROR","2021-02-22T11:27:20.1899233-05:00[America/Bogota]","0.0","62.84"
+"Login","Inicio de sesión exitoso","SUCCESS","2021-02-23T14:48:32.7126772-05:00[America/Bogota]","0.0","53.11"

@@ -23,10 +23,10 @@ public class Selecciona implements Task{
                 Esperar.por(20)
         );
 
-        if (HomeAppUI.LISTADO_LINEA.resolveFor(actor).isVisible())
-        //if (HomeAppUI.LISTADO_LINEA.waitingForNoMoreThan(Duration.ofSeconds(10)).resolveFor(actor).isVisible())
+        if (HomeAppUI.LISTADO_LINEA.resolveAllFor(actor).size()>1)
         {
             actor.attemptsTo(
+                    Esperar.por(10),
                     Click.on(HomeAppUI.LINEA.of(linea))
             );
         }

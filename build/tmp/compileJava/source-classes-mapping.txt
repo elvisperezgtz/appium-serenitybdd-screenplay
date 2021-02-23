@@ -10,18 +10,18 @@ gt/com/tigo/qa/userinterfaces/MenuUsurioUI.java
  gt.com.tigo.qa.userinterfaces.MenuUsurioUI
 gt/com/tigo/qa/interactions/Scroll.java
  gt.com.tigo.qa.interactions.Scroll
-gt/com/tigo/qa/questions/ElIcono.java
- gt.com.tigo.qa.questions.ElIcono
+gt/com/tigo/qa/models/Credenciales.java
+ gt.com.tigo.qa.models.Credenciales
 gt/com/tigo/qa/userinterfaces/ChromeUI.java
  gt.com.tigo.qa.userinterfaces.ChromeUI
-gt/com/tigo/qa/questions/ElMenuInferior.java
- gt.com.tigo.qa.questions.ElMenuInferior
+gt/com/tigo/qa/utils/correos/ManejadorDeCorreos.java
+ gt.com.tigo.qa.utils.correos.ManejadorDeCorreos
 gt/com/tigo/qa/tasks/AbrirElNavegador.java
  gt.com.tigo.qa.tasks.AbrirElNavegador
 gt/com/tigo/qa/userinterfaces/LoginUI.java
  gt.com.tigo.qa.userinterfaces.LoginUI
-gt/com/tigo/qa/userinterfaces/HomeAppUI.java
- gt.com.tigo.qa.userinterfaces.HomeAppUI
+gt/com/tigo/qa/tasks/IniciarSesion.java
+ gt.com.tigo.qa.tasks.IniciarSesion
 gt/com/tigo/qa/tasks/LaUrl.java
  gt.com.tigo.qa.tasks.LaUrl
 gt/com/tigo/qa/questions/ElSaludo.java
@@ -40,8 +40,8 @@ gt/com/tigo/qa/tasks/Solicitar.java
  gt.com.tigo.qa.tasks.Solicitar
 gt/com/tigo/qa/interactions/Close.java
  gt.com.tigo.qa.interactions.Close
-gt/com/tigo/qa/tasks/Selecciona.java
- gt.com.tigo.qa.tasks.Selecciona
+gt/com/tigo/qa/tasks/IngresarOTP.java
+ gt.com.tigo.qa.tasks.IngresarOTP
 gt/com/tigo/qa/interactions/Abrir.java
  gt.com.tigo.qa.interactions.Abrir
 gt/com/tigo/qa/utils/actions/actions.java
@@ -65,11 +65,11 @@ gt/com/tigo/qa/utils/enums/Direccion.java
  gt.com.tigo.qa.utils.enums.Direccion
 gt/com/tigo/qa/tasks/Establecer.java
  gt.com.tigo.qa.tasks.Establecer
-gt/com/tigo/qa/tasks/IniciarSesion.java
- gt.com.tigo.qa.tasks.IniciarSesion
-gt/com/tigo/qa/utils/correos/ManejadorDeCorreos.java
- gt.com.tigo.qa.utils.correos.ManejadorDeCorreos
-gt/com/tigo/qa/models/Credenciales.java
- gt.com.tigo.qa.models.Credenciales
-gt/com/tigo/qa/tasks/IngresarOTP.java
- gt.com.tigo.qa.tasks.IngresarOTP
+gt/com/tigo/qa/tasks/Selecciona.java
+ gt.com.tigo.qa.tasks.Selecciona
+gt/com/tigo/qa/questions/ElIcono.java
+ gt.com.tigo.qa.questions.ElIcono
+gt/com/tigo/qa/questions/ElMenuInferior.java
+ gt.com.tigo.qa.questions.ElMenuInferior
+gt/com/tigo/qa/userinterfaces/HomeAppUI.java
+ gt.com.tigo.qa.userinterfaces.HomeAppUI

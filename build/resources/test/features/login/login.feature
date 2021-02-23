@@ -11,8 +11,8 @@ Background:
   Scenario: Inicio de sesión exitoso
     When El inicia sesion en la app por medio del correo electronico
       | correo                | contrasenia |
-      | tigoindra12@hotmail.com | Tigo2222  |
-    And El selecciona la linea Prepago 40153543
+      | tigo.indra4@yahoo.com | Tygoi2i2  |
+    And El selecciona la linea Postpago: 31816048
     Then El deberia poder ver los detalles de la linea
 
   @LoginCorreoOk
@@ -28,7 +28,7 @@ Background:
     Then El deberia poder ver los detalles de la linea
 
   @LoginOTPOk
-  #@buzonOTP
+  @buzonOTP
   Scenario: Inicio de sesión exitoso con OTP en Tigo en Línea App
     When El inicia sesion en la app por medio del numero de telefono 40153543
     And El ingresa codigo OTP correcto

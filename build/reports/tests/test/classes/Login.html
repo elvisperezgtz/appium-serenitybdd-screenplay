@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1m5.08s</div>
+<div class="counter">54.922s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,38 +61,16 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
+<a href="#tab1">Standard output</a>
 </li>
 <li>
-<a href="#tab2">Standard output</a>
-</li>
-<li>
-<a href="#tab3">Standard error</a>
+<a href="#tab2">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="Inicio de sesión exitoso con OTP en Tigo en Línea App"></a>
-<h3 class="failures">Inicio de sesión exitoso con OTP en Tigo en Línea App</h3>
-<span class="code">
-<pre>java.lang.AssertionError: Expected condition failed: waiting for Expecting element is displayed: By.xpath: //android.view.View[2]/android.widget.TabWidget (tried for 10 second(s) with 50 milliseconds interval)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: '22LAP5CG0434XBS', ip: '192.168.20.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: driver.version: unknown
-	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
-	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
-	at gt.com.tigo.qa.stepsdefinitions.LoginSteps.elDeberiaPoderVerLosDetallesDeLaLinea(LoginSteps.java:91)
-	at ✽.El deberia poder ver los detalles de la linea(src/test/resources/features/login/login.feature:35)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -103,101 +81,100 @@ Driver info: driver.version: unknown
 </tr>
 </thead>
 <tr>
-<td class="failures">Inicio de sesión exitoso con OTP en Tigo en Línea App</td>
-<td class="failures">1m5.08s</td>
-<td class="failures">failed</td>
+<td class="success">Inicio de sesión exitoso</td>
+<td class="success">54.922s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>11:27:20.638 [Test worker] DEBUG net.thucydides.core.webdriver.appium.AppiumConfiguration - The provided context (appium) could not be used as the MobilePlatform
-11:27:21.509 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class net.serenitybdd.rest.utils.RestSpecificationFactory
-11:27:42.421 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Opening darkroom
-11:27:42.422 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Darkroom processing line starting up
-11:27:43.233 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\1051c560646a98f6596ad28f37f8d82138c9e1f935220176df6d12089bfc7bcd.png
-11:27:43.235 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-12628123837611142989
-11:27:43.235 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\SP Tigo\target\site\serenity\1051c560646a98f6596ad28f37f8d82138c9e1f935220176df6d12089bfc7bcd.png
-11:27:43.235 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: LoginSteps.elUsuarioRegistradoAbreLaApp - {0} selecciona Actualizar - Ahora no
-11:27:43.260 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: Quitar.performAs - {0} espera por la lista de lineas
-11:27:43.275 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} espera por la lista de lineas
-11:27:43.279 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Boton ahora no
-11:27:54.421 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\efe0e4f8d1db206de024fb54b262c071e8b14fac51ae5e37da753b80b5ab8313.png
-11:27:54.422 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} selecciona Actualizar - Ahora no
-11:27:54.423 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-1137653711372727775
-11:27:54.423 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\SP Tigo\target\site\serenity\efe0e4f8d1db206de024fb54b262c071e8b14fac51ae5e37da753b80b5ab8313.png
-11:27:55.342 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\efe0e4f8d1db206de024fb54b262c071e8b14fac51ae5e37da753b80b5ab8313.png
-11:27:55.342 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: LoginSteps.elIniciaSesionEnLaAppPorMedioDelNumeroDeTelefono - !#title
-11:27:55.351 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: LoginSteps.elIniciaSesionEnLaAppPorMedioDelNumeroDeTelefono - {0} clicks on #target
-11:27:55.351 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Boton ingresar con correo
-11:27:56.617 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\7da37d7e10d4c8f1f75a6e70c9c1c5dba5ba32eca4db7518d8ec1a9c677005f7.png
-11:27:56.618 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} clicks on #target
-11:27:56.619 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-17837387087787724881
-11:27:56.619 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\SP Tigo\target\site\serenity\7da37d7e10d4c8f1f75a6e70c9c1c5dba5ba32eca4db7518d8ec1a9c677005f7.png
-11:27:56.627 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: LoginSteps.elIniciaSesionEnLaAppPorMedioDelNumeroDeTelefono - {0} clicks on #target
-11:27:56.629 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Boton cambiar ingreso por telefono
-11:27:58.584 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\46df16c2e6d4df232bb8558fadf4cbbdc37f7fb562252f9789ce17b591fd4951.png
-11:27:58.585 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} clicks on #target
-11:27:58.587 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-3467382214398643375
-11:27:58.587 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\SP Tigo\target\site\serenity\46df16c2e6d4df232bb8558fadf4cbbdc37f7fb562252f9789ce17b591fd4951.png
-11:27:58.595 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: LoginSteps.elIniciaSesionEnLaAppPorMedioDelNumeroDeTelefono - {0} enters #theTextAsAString into #target
-11:27:58.596 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Campo Numero movil
-11:28:00.570 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\514679ab8fd58b8badcfbb544d970edaa4869409c16882b25ccacea4c531ee9c.png
-11:28:00.571 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} enters #theTextAsAString into #target
-11:28:00.572 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-13514968505487428292
-11:28:00.572 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\SP Tigo\target\site\serenity\514679ab8fd58b8badcfbb544d970edaa4869409c16882b25ccacea4c531ee9c.png
-11:28:00.578 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: LoginSteps.elIniciaSesionEnLaAppPorMedioDelNumeroDeTelefono - {0} clicks on #target
-11:28:00.579 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Boton continuar
-11:28:01.717 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\514679ab8fd58b8badcfbb544d970edaa4869409c16882b25ccacea4c531ee9c.png
-11:28:01.717 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} clicks on #target
-11:28:01.724 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: !#title
-Intento # 1
-11:28:08.905 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\25a9fa9920a02c47476de68ca88880e4c6ecfee3a21df7093be82dc2784b92c6.png
-11:28:08.906 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: LoginSteps.elIngresaCodigoOTPCorrecto - !#title
-11:28:08.908 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-3860133881278061949
-11:28:08.908 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\SP Tigo\target\site\serenity\25a9fa9920a02c47476de68ca88880e4c6ecfee3a21df7093be82dc2784b92c6.png
-11:28:08.918 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: LoginSteps.elIngresaCodigoOTPCorrecto - {0} enters #theTextAsAString into #target
-11:28:08.918 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Campo de ingreso de codigo OTP
-11:28:09.929 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\125042feeb9fcf163272b43d75a94f4417690f996baefe9a5ab8099a3b41f808.png
-11:28:09.929 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} enters #theTextAsAString into #target
-11:28:09.930 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-2456319512059967225
-11:28:09.931 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\SP Tigo\target\site\serenity\125042feeb9fcf163272b43d75a94f4417690f996baefe9a5ab8099a3b41f808.png
-11:28:09.935 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: LoginSteps.elIngresaCodigoOTPCorrecto - {0} clicks on #target
-11:28:09.936 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Boton para verificar OTP
-11:28:10.955 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\ed4db43c935dcc1aede90c4ece2613fd429256a7c296ed5751e985fb30358af5.png
-11:28:10.956 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} clicks on #target
-11:28:10.957 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-10107076023365706706
-11:28:10.958 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\SP Tigo\target\site\serenity\ed4db43c935dcc1aede90c4ece2613fd429256a7c296ed5751e985fb30358af5.png
-11:28:10.967 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: !#title
-11:28:11.614 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\9ecf5ebd059a72cff50695df09c8700537f6f442a45ddcfaae27158de5ab4b77.png
-11:28:11.615 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-4752671675179066243
-11:28:11.615 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\SP Tigo\target\site\serenity\9ecf5ebd059a72cff50695df09c8700537f6f442a45ddcfaae27158de5ab4b77.png
-11:28:11.617 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Tab de opciones
-11:28:22.576 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\48ca769b824c68292f0bbd0464d2d7800601c2da4c0ca11a33fc56b5d18f67ae.png
-11:28:22.578 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-6370739099353910539
-11:28:22.579 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\SP Tigo\target\site\serenity\48ca769b824c68292f0bbd0464d2d7800601c2da4c0ca11a33fc56b5d18f67ae.png
-11:28:23.216 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class net.serenitybdd.rest.utils.RestSpecificationFactory
-11:28:25.256 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
+<pre>14:48:33.128 [Test worker] DEBUG net.thucydides.core.webdriver.appium.AppiumConfiguration - The provided context (appium) could not be used as the MobilePlatform
+14:48:34.041 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class net.serenitybdd.rest.utils.RestSpecificationFactory
+14:48:54.213 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Opening darkroom
+14:48:54.216 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Darkroom processing line starting up
+14:48:55.051 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\7019c1af3a985f3ec96495aaa289179215d01129473334fdb85fbfd4a77fd40a.png
+14:48:55.053 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-13363772398323832790
+14:48:55.053 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: LoginSteps.elUsuarioRegistradoAbreLaApp - {0} selecciona Actualizar - Ahora no
+14:48:55.053 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\SP Tigo\target\site\serenity\7019c1af3a985f3ec96495aaa289179215d01129473334fdb85fbfd4a77fd40a.png
+14:48:55.074 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: Quitar.performAs - {0} espera por la lista de lineas
+14:48:55.090 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} espera por la lista de lineas
+14:48:55.097 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Boton ahora no
+14:49:06.709 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\612dde01a211943d1f2eee26e307e0d397ea6e1c64a1f3985bb7a993bf413f60.png
+14:49:06.710 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} selecciona Actualizar - Ahora no
+14:49:06.712 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-12276005982074634784
+14:49:06.712 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\SP Tigo\target\site\serenity\612dde01a211943d1f2eee26e307e0d397ea6e1c64a1f3985bb7a993bf413f60.png
+14:49:07.594 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\612dde01a211943d1f2eee26e307e0d397ea6e1c64a1f3985bb7a993bf413f60.png
+14:49:07.594 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: LoginSteps.elIniciaSesionEnLaAppPorMedioDelCorreoElectronico - {0} inicia sesion en la app con el usuario #usuario y la contrasenia #contrasenia
+14:49:08.471 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\7a324c1b7321a31e24832d80bb17b294078fa7673fb6dbd80baa2c6fa24db1ab.png
+14:49:08.472 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: IniciarSesion.performAs - {0} clicks on #target
+14:49:08.473 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-17082718082789190641
+14:49:08.474 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Boton ingresar con correo
+14:49:08.474 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\SP Tigo\target\site\serenity\7a324c1b7321a31e24832d80bb17b294078fa7673fb6dbd80baa2c6fa24db1ab.png
+14:49:09.769 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\2f6cfad1ea4048ee3283c2a08dc6e0b241faba1ebb5cca93d0e3d91412f64e7a.png
+14:49:09.770 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} clicks on #target
+14:49:09.773 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-1471428777706128635
+14:49:09.774 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\SP Tigo\target\site\serenity\2f6cfad1ea4048ee3283c2a08dc6e0b241faba1ebb5cca93d0e3d91412f64e7a.png
+14:49:09.785 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: IniciarSesion.performAs - {0} enters #theTextAsAString into #target
+14:49:09.787 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Campo correo
+14:49:11.860 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\f51544053c0bdf8763f8cdaffad491cb9bd72db62cf24a8c998dcea16a8dae00.png
+14:49:11.861 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} enters #theTextAsAString into #target
+14:49:11.862 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-12566924075100068157
+14:49:11.862 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\SP Tigo\target\site\serenity\f51544053c0bdf8763f8cdaffad491cb9bd72db62cf24a8c998dcea16a8dae00.png
+14:49:11.877 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: IniciarSesion.performAs - {0} clicks on #target
+14:49:11.878 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for editText correo
+14:49:13.111 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\f51544053c0bdf8763f8cdaffad491cb9bd72db62cf24a8c998dcea16a8dae00.png
+14:49:13.112 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} clicks on #target
+14:49:13.126 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: IniciarSesion.performAs - {0} enters #theTextAsAString into #target
+14:49:13.127 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for editText correo
+14:49:15.579 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\336a93031ef9f505440587a8d288fba79cadaf1e6f7a3d0491ab4acc4d58095a.png
+14:49:15.580 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} enters #theTextAsAString into #target
+14:49:15.581 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-6290777102590671301
+14:49:15.581 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\SP Tigo\target\site\serenity\336a93031ef9f505440587a8d288fba79cadaf1e6f7a3d0491ab4acc4d58095a.png
+14:49:15.592 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: IniciarSesion.performAs - {0} clicks on #target
+14:49:15.593 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for editText correo
+14:49:16.831 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\768fff29d6704fd277ef5c5b233100d1dac04f1931a69854b211d3a22cce3f00.png
+14:49:16.831 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} clicks on #target
+14:49:16.833 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-13226996971666753396
+14:49:16.833 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\SP Tigo\target\site\serenity\768fff29d6704fd277ef5c5b233100d1dac04f1931a69854b211d3a22cce3f00.png
+14:49:16.842 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} inicia sesion en la app con el usuario #usuario y la contrasenia #contrasenia
+14:49:17.621 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\7885125e548a74cc19627f0ae51b5df64c60928e32fe3c9f73bddec942d1ae0e.png
+14:49:17.622 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: LoginSteps.ElSeleccionaLaLinea - {0} selecciona del listado la linea #linea
+14:49:17.623 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-2628719099940216830
+14:49:17.623 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\SP Tigo\target\site\serenity\7885125e548a74cc19627f0ae51b5df64c60928e32fe3c9f73bddec942d1ae0e.png
+14:49:17.639 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: Selecciona.performAs - {0} espera por la lista de lineas
+14:49:17.658 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} espera por la lista de lineas
+14:49:17.665 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Listado de lineas
+14:49:23.629 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\81ca46536c393e5dc6733ffd83888a8e08bfc958d56a1420c3bf2cac3606f00c.png
+14:49:23.629 [Test worker] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: {0} selecciona del listado la linea #linea
+14:49:23.630 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-5523137408896608722
+14:49:23.631 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\SP Tigo\target\site\serenity\81ca46536c393e5dc6733ffd83888a8e08bfc958d56a1420c3bf2cac3606f00c.png
+14:49:24.242 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\0da76ab9137c581473f88ca2e92a9d105b1409c0379bde10260afe342561765f.png
+14:49:24.243 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-18307818894762864244
+14:49:24.243 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\SP Tigo\target\site\serenity\0da76ab9137c581473f88ca2e92a9d105b1409c0379bde10260afe342561765f.png
+14:49:24.244 [Test worker] DEBUG net.serenitybdd.screenplay.targets.IFrameSwitcher - default content already selected for Tab de opciones
+14:49:25.814 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for D:\SP Tigo\target\site\serenity\b09e3c01008a4eda1ee45e3fc0883b68300e74640adf7704092ec538f2b13eb6.png
+14:49:25.816 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-866942694050131013
+14:49:25.816 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to D:\SP Tigo\target\site\serenity\b09e3c01008a4eda1ee45e3fc0883b68300e74640adf7704092ec538f2b13eb6.png
+14:49:26.020 [Test worker] DEBUG net.thucydides.core.reflection.ClassFinder - Could not load class net.serenitybdd.rest.utils.RestSpecificationFactory
+14:49:27.730 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
 
-TEST FAILED WITH ERROR: Inicio de sesión exitoso con OTP en Tigo en Línea App
----------------------------------------------------------------------
-11:28:25.262 [Test worker] DEBUG net.thucydides.core.steps.ConsoleLoggingListener - RELATED ISSUES: 
-11:28:25.374 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then el menu inferior should be (true)
-11:28:25.375 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected condition failed: waiting for Expecting element is displayed: By.xpath: //android.view.View[2]/android.widget.TabWidget (tried for 10 second(s) with 50 milliseconds interval)Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: '22LAP5CG0434XBS', ip: '192.168.20.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'Driver info: driver.version: unknown
+TEST PASSED: Inicio de sesión exitoso
+----------------------------------------------------------------------------
 </pre>
 </span>
 </div>
-<div id="tab3" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>feb. 22, 2021 11:27:42 A. M. io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+<pre>feb. 23, 2021 2:48:54 P. M. io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 </pre>
 </span>
@@ -210,7 +187,7 @@ INFO: Detected dialect: W3C
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.7</a> at 22/02/2021, 11:28:28 a. m.</p>
+<a href="http://www.gradle.org">Gradle 6.7</a> at 23/02/2021, 2:49:30 p. m.</p>
 </div>
 </div>
 </body>
