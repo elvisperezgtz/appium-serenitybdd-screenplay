@@ -115,4 +115,12 @@ public class LoginSteps {
         );
     }
 
+    @And("^el deberia salir de la sesion$")
+    public void elDeberiaSalirDeLaSesion()
+    {
+        theActorInTheSpotlight().attemptsTo(
+                Terminar.laSesion()
+        );
+    }
+
 }
