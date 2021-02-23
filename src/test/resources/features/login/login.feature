@@ -14,6 +14,7 @@ Background:
       | tigo.indra4@yahoo.com | Tygoi2i2  |
     And El selecciona la linea Postpago: 31816048
     Then El deberia poder ver los detalles de la linea
+    And el deberia salir de la sesion
 
   @LoginCorreoOk
   Scenario: Inicio de sesión exitoso
