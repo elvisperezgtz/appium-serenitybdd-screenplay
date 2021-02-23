@@ -26,5 +26,13 @@ public class LoginUI {
             .locatedBy("//*[@text='AHORA NO']");
     public final static Target MENSAJE_ACTUALIZACION = Target.the("Boton ahora no")
             .locatedBy("(//*[contains(@text,'disponible')])[1]");
+    public final static Target INGRESAR_CON_TELEFONO = Target.the("Boton ingresar con telefono")
+            .locatedBy("//*[@resource-id=\"hePhoneLoginNotCurrentCountry\"]");
+    public final static Target BOTON_CAMBIA_INGRESO_TELEFONO = Target.the("Boton cambiar ingreso por telefono")
+            .locatedBy("//*[@resource-id=\"onLoginWithPhoneLbl\"]");
+    public final static Target CAMPO_TELEFONO = Target.the("Campo Numero movil")
+            .locatedBy("//android.view.View[2]/android.widget.EditText");
+    public final static Target BOTON_CONTINUAR_OTP = Target.the("Boton continuar")
+            .locatedBy("//*[@resource-id=\"doOTPLoginBtn\"]");
 
 }

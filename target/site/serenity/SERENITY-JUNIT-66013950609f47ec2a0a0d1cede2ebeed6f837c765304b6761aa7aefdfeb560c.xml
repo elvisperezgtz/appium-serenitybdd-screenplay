@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Login" skipped="0" tests="1" time="62.84" timestamp="2021-02-22 11:27:20"><testcase name="Inicio de sesión exitoso con OTP en Tigo en Línea App"><error message="Expected condition failed: waiting for Expecting element is displayed: By.xpath: //android.view.View[2]/android.widget.TabWidget (tried for 10 second(s) with 50 milliseconds interval)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: '22LAP5CG0434XBS', ip: '192.168.20.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'&#10;Driver info: driver.version: unknown" type="java.lang.AssertionError">Expected condition failed: waiting for Expecting element is displayed: By.xpath: //android.view.View[2]/android.widget.TabWidget (tried for 10 second(s) with 50 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '22LAP5CG0434XBS', ip: '192.168.20.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown</error><system-err>Expected condition failed: waiting for Expecting element is displayed: By.xpath: //android.view.View[2]/android.widget.TabWidget (tried for 10 second(s) with 50 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '22LAP5CG0434XBS', ip: '192.168.20.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown&#13;
+gt.com.tigo.qa.stepsdefinitions.LoginSteps.elDeberiaPoderVerLosDetallesDeLaLinea(LoginSteps.java:91)&#13;
+✽.El deberia poder ver los detalles de la linea(src/test/resources/features/login/login.feature:35)&#13;
+</system-err></testcase></testsuite>

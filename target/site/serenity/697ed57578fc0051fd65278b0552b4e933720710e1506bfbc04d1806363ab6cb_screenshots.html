@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Pruebas automatizadas Tigo en LÃ­nea App</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="83f6679d20705c4d2fe60d958c7694f289478bda7a9f3a9ac9cbf7ba86966dfb.html">Login</a></span>
+                > <span class="truncate-60"><a
+                    href="697ed57578fc0051fd65278b0552b4e933720710e1506bfbc04d1806363ab6cb.html">Inicio de sesi&oacute;n exitoso </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-02-2021 12:25</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Login</span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Como usuario deseo ingresar a Tigo en Línea App para gestionar mis líneas</p>
+<p>{Examples}
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="c3b5bdb65c16f845e5104531cb1657726a17b0f420a73f4fbd8547382fe8413f.html">Appium
+                                    (context)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="ad09eef2791af15c8305ba96dbb4c260ca2385621f98c57fb3564bcf4d67256a.html">Login Correo Ok
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Inicio de sesi&oacute;n exitoso
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="ee4d5fa9faa9633af2b339e02bfc887f8dc494d121b35cc4d3ae05a83bde7918.png" title=" Given El usuario registrado abre la app" width="720"/>
+                <img src="ee4d5fa9faa9633af2b339e02bfc887f8dc494d121b35cc4d3ae05a83bde7918.png" title=" When El inicia sesion en la app por medio del correo electronico
+| correo | contrasenia |
+| tigoindra12@hotmail.com | Tigo2222 |" width="720"/>
+                <img src="ee4d5fa9faa9633af2b339e02bfc887f8dc494d121b35cc4d3ae05a83bde7918.png" title=" James selecciona Actualizar - Ahora no" width="720"/>
+                <img src="ee4d5fa9faa9633af2b339e02bfc887f8dc494d121b35cc4d3ae05a83bde7918.png" title=" James espera por la lista de lineas" width="720"/>
+                <img src="828bcbfb5daf119bab1a4ba70f8cf7948b4eabbdd9c7aff0bc1946e99a0316ee.png" title=" James clicks on Boton ahora no" width="720"/>
+                <img src="aa28563ce8e3f9203d2f84bddb6c9a63e72b46ac91a590276366a9d9daf0953e.png" title=" James clicks on Boton ahora no (completed)" width="720"/>
+                <img src="aa28563ce8e3f9203d2f84bddb6c9a63e72b46ac91a590276366a9d9daf0953e.png" title=" James selecciona Actualizar - Ahora no (completed)" width="720"/>
+                <img src="aa28563ce8e3f9203d2f84bddb6c9a63e72b46ac91a590276366a9d9daf0953e.png" title=" James inicia sesion en la app con el usuario tigoindra12@hotmail.com y la contrasenia Tigo2222" width="720"/>
+                <img src="aa28563ce8e3f9203d2f84bddb6c9a63e72b46ac91a590276366a9d9daf0953e.png" title=" James clicks on Boton ingresar con correo" width="720"/>
+                <img src="904cc173d860d7c81b12a3bec71060116ae732569ce840b241f541fe344f1162.png" title=" James clicks on Boton ingresar con correo (completed)" width="720"/>
+                <img src="904cc173d860d7c81b12a3bec71060116ae732569ce840b241f541fe344f1162.png" title=" James enters 'tigoindra12@hotmail.com' into Campo correo" width="720"/>
+                <img src="bac3d117cde7c6632455ca4930142b1d15aeb14f3043c9cc01fa37b9e6c960be.png" title=" James enters 'tigoindra12@hotmail.com' into Campo correo (completed)" width="720"/>
+                <img src="bac3d117cde7c6632455ca4930142b1d15aeb14f3043c9cc01fa37b9e6c960be.png" title=" James clicks on editText correo" width="720"/>
+                <img src="cfb6a4696f80ffcc3196fee7d3511a76c7fa7fd9c5277ebd38d1400f1dd4f152.png" title=" James clicks on editText correo (completed)" width="720"/>
+                <img src="cfb6a4696f80ffcc3196fee7d3511a76c7fa7fd9c5277ebd38d1400f1dd4f152.png" title=" James enters 'Tigo2222' into editText correo" width="720"/>
+                <img src="ee787680c4e3603f6215a272a1c244fed733ec3a7322a79377ebd1f1884c7257.png" title=" James enters 'Tigo2222' into editText correo (completed)" width="720"/>
+                <img src="ee787680c4e3603f6215a272a1c244fed733ec3a7322a79377ebd1f1884c7257.png" title=" James clicks on editText correo" width="720"/>
+                <img src="cf3d48468cac33c4d52b9775212138493807646567d106d9b2654dd8b4aba68f.png" title=" James clicks on editText correo (completed)" width="720"/>
+                <img src="cf3d48468cac33c4d52b9775212138493807646567d106d9b2654dd8b4aba68f.png" title=" James inicia sesion en la app con el usuario tigoindra12@hotmail.com y la contrasenia Tigo2222 (completed)" width="720"/>
+                <img src="cf3d48468cac33c4d52b9775212138493807646567d106d9b2654dd8b4aba68f.png" title=" When El inicia sesion en la app por medio del correo electronico
+| correo | contrasenia |
+| tigoindra12@hotmail.com | Tigo2222 | (completed)" width="720"/>
+                <img src="1fb54561e2b58a72fb5afd7ef3097fb8ae3b71d1f50f2e51adb16ead45ba6d27.png" title=" Then El deberia poder ver los detalles de la linea" width="720"/>
+                <img src="1fb54561e2b58a72fb5afd7ef3097fb8ae3b71d1f50f2e51adb16ead45ba6d27.png" title=" Then el menu inferior should be (true)" width="720"/>
+                <img src="0391149665775752fb99d5dbc3341d0e6b745c9e7a2b46d73e2bfeacdd12fd63.png" title=" Then el menu inferior should be (true) (completed)" width="720"/>
+                <img src="0391149665775752fb99d5dbc3341d0e6b745c9e7a2b46d73e2bfeacdd12fd63.png" title=" Then El deberia poder ver los detalles de la linea (completed): <span class='success-color'>SUCCESS</span>" width="720"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.89</span>
+</div>
+</body>
+</html>

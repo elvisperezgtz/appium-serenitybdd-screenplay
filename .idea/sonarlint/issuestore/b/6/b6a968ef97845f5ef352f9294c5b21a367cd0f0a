@@ -1,34 +1,34 @@
 
-H
-java:S1444"-Make this "public static NUMEROS" field final(Ã›´¥üÿÿÿÿ
+D
+java:S2140")Use "java.util.Random.nextInt()" instead.(é©Š×úÿÿÿÿ
+q
+java:S1104"VMake MINUSCULAS a static final constant or non-public and provide accessors if needed.(‹Ğü”øÿÿÿÿ
 K
 java:S1444"0Make this "public static MAYUSCULAS" field final(Ü¬àıÿÿÿÿ
+p
+java:S3008"URename this field "MAYUSCULAS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü¬àıÿÿÿÿ
+H
+java:S1444"-Make this "public static NUMEROS" field final(Ã›´¥üÿÿÿÿ
+l
+java:S1104
+"VMake ESPECIALES a static final constant or non-public and provide accessors if needed.(ñÅëä
+p
+java:S3008"URename this field "MINUSCULAS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹Ğü”øÿÿÿÿ
+U
+java:S1118":Add a private constructor to hide the implicit public one.(öÔë®ÿÿÿÿÿ
+k
+java:S3008
+"URename this field "ESPECIALES" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÅëä
 K
 java:S1444"0Make this "public static MINUSCULAS" field final(‹Ğü”øÿÿÿÿ
 F
 java:S1444
 "0Make this "public static ESPECIALES" field final(ñÅëä
-7
-java:S1643"Use a StringBuilder instead.(é©Š×úÿÿÿÿ
 n
 java:S1104"SMake NUMEROS a static final constant or non-public and provide accessors if needed.(Ã›´¥üÿÿÿÿ
-q
-java:S1104"VMake MAYUSCULAS a static final constant or non-public and provide accessors if needed.(Ü¬àıÿÿÿÿ
-q
-java:S1104"VMake MINUSCULAS a static final constant or non-public and provide accessors if needed.(‹Ğü”øÿÿÿÿ
-l
-java:S1104
-"VMake ESPECIALES a static final constant or non-public and provide accessors if needed.(ñÅëä
 m
 java:S3008"RRename this field "NUMEROS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã›´¥üÿÿÿÿ
-p
-java:S3008"URename this field "MAYUSCULAS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü¬àıÿÿÿÿ
-p
-java:S3008"URename this field "MINUSCULAS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹Ğü”øÿÿÿÿ
-k
-java:S3008
-"URename this field "ESPECIALES" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÅëä
-U
-java:S1118":Add a private constructor to hide the implicit public one.(öÔë®ÿÿÿÿÿ
-D
-java:S2140")Use "java.util.Random.nextInt()" instead.(é©Š×úÿÿÿÿ
+7
+java:S1643"Use a StringBuilder instead.(é©Š×úÿÿÿÿ
+q
+java:S1104"VMake MAYUSCULAS a static final constant or non-public and provide accessors if needed.(Ü¬àıÿÿÿÿ

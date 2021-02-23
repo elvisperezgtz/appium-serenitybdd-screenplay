@@ -23,12 +23,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/gt/com/tigo/qa/exceptions/ExceptionsError.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/gt/com/tigo/qa/interactions/Abrir.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/gt/com/tigo/qa/interactions/Close.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/gt/com/tigo/qa/interactions/Esperar.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/gt/com/tigo/qa/interactions/Limpiar.java">
           <value>
             <set />
           </value>
@@ -58,7 +73,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/gt/com/tigo/qa/questions/ElBanner.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/gt/com/tigo/qa/questions/ElIcono.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/gt/com/tigo/qa/questions/ElMenuInferior.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/gt/com/tigo/qa/questions/ElSaludo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/gt/com/tigo/qa/questions/LosDetalles.java">
           <value>
             <set />
           </value>
@@ -88,7 +123,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/gt/com/tigo/qa/tasks/IngresarOTP.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/gt/com/tigo/qa/tasks/IniciarSesion.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/gt/com/tigo/qa/tasks/IniciarSesionHE.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/gt/com/tigo/qa/tasks/IniciarSesionOTP.java">
           <value>
             <set />
           </value>
@@ -113,6 +163,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/gt/com/tigo/qa/tasks/Selecciona.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/gt/com/tigo/qa/tasks/SeleccionaLinea.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/gt/com/tigo/qa/tasks/Solicitar.java">
           <value>
             <set />
@@ -124,6 +184,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/gt/com/tigo/qa/userinterfaces/LoginUI.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/gt/com/tigo/qa/userinterfaces/OPTUI.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/gt/com/tigo/qa/userinterfaces/OTPUI.java">
           <value>
             <set />
           </value>
@@ -149,6 +219,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/test/resources/features/login/login.feature">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Tigo/src/test/java/Gt/OneApp/pageObjects/loginPage.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Tigo/src/test/resources/features/login.feature">
           <value>
             <set />
           </value>

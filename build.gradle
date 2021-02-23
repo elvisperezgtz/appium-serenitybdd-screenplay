@@ -55,6 +55,37 @@ dependencies {
 
 }
 
+gradle.buildFinished {
+
+    def cssFile = new File("target/site/serenity/css/core.css")
+    if (cssFile.exists())
+    {
+        def oldCss = '#slider {\n' +
+                '    position:relative;\n' +
+                '    width:1000px;'
+        def newCss = '#slider {\n' +
+                '\tmargin-left:35%;\n' +
+                '    position:relative;\n' +
+                '    width:300px;'
+        def newCssFile = cssFile.text.replace(oldCss,newCss)
+        cssFile.text = newCssFile
+    }
+
+    def jsFile = new File("target/site/serenity/scripts/imgpreview.full.jquery.js")
+    if (jsFile.exists())
+    {
+        def oldJs = '(function($){'
+        def newJs = 'window.onload = function () {\n' +
+                '  setTimeout(function () {\n' +
+                '    $("body #imgPreviewContainer:last img").css("width", "250px");\n' +
+                '  }, 500);\n' +
+                '};\n' +
+                '(function($){'
+        def newJsFile = jsFile.text.replace(oldJs,newJs)
+        jsFile.text = newJsFile
+    }
+}
+
 test {
     systemProperty "cucumber.options", System.getProperty("cucumber.options")
     systemProperty "user.country", "GT"
