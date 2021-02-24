@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         glue = "gt.com.tigo.qa.stepsdefinitions",
         snippets = SnippetType.CAMELCASE,
-        features = "src\\test\\resources\\features\\login\\login.feature",
-        tags = "@LoginEditarOk"
+        features = "src/test/resources/features/login/shopping.feature",
+        tags = "@CompraPaqueteMensajes"
 )
-public class Login {
+public class Shopping {
 }
