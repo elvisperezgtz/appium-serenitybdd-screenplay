@@ -11,8 +11,8 @@ Background:
   Scenario: Inicio de sesión exitoso
     When El inicia sesion en la app por medio del correo electronico
       | correo                | contrasenia |
-      | tigo.indra4@yahoo.com | Tygoi2i2  |
-    And El selecciona la linea Postpago: 31816048
+      | tigoindra10@gmail.com | Tigo5555  |
+    And El selecciona la linea Prepago 40097056
     Then El deberia poder ver los detalles de la linea
     And el deberia salir de la sesion
 
@@ -45,6 +45,12 @@ Background:
     And El ingresa codigo OTP correcto
     Then El deberia poder ver los detalles de la linea
     And el deberia salir de la sesion
+
+  @LoginOTPInvalido
+  Scenario: Inicio de sesión con OTP invalido en Tigo en Línea App
+    When El inicia sesion en la app por medio del numero de telefono 40153543
+    And El ingresa codigo OTP invalido
+    Then El deberia poder ver el mensaje de error por codigo invalido
 
   @recuperarContrasenia
   @buzonReset

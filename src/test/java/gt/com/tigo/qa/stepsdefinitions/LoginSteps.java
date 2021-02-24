@@ -9,6 +9,7 @@ import gt.com.tigo.qa.interactions.Abrir;
 import gt.com.tigo.qa.models.Credenciales;
 import gt.com.tigo.qa.questions.ElMensajeContraseniaInvalida;
 import gt.com.tigo.qa.questions.ElMensajeDeCorreoInvalido;
+import gt.com.tigo.qa.questions.ElMensajeOTPInvalido;
 import gt.com.tigo.qa.questions.ElMenuInferior;
 import gt.com.tigo.qa.tasks.*;
 import gt.com.tigo.qa.utils.correos.ManejadorDeCorreos;
@@ -139,7 +140,25 @@ public class LoginSteps {
     @Then("^El deberia poder ver el mensaje de contrasenia invalida$")
     public void elDeberiaPoderVerElMensajeDeContraseniaInvalida()
     {
-        theActorInTheSpotlight().should(seeThat(ElMensajeContraseniaInvalida.esVisible(),Matchers.is(true)));
+        theActorInTheSpotlight().should(seeThat(
+                ElMensajeContraseniaInvalida.esVisible(),
+                Matchers.is(true)));
+    }
+
+    @And("^El ingresa codigo OTP invalido$")
+    public void elIngresaCodigoOTPInvalido()
+    {
+        theActorInTheSpotlight().attemptsTo(
+                ColocarOTP.invalido()
+        );
+    }
+
+    @Then("^El deberia poder ver el mensaje de error por codigo invalido$")
+    public void elDeberiaPoderVerElMensajeDeErrorPorCodigoInvalido()
+    {
+        theActorInTheSpotlight().should(seeThat(
+                ElMensajeOTPInvalido.esVisible(),
+                Matchers.is(true)));
     }
 
 }
