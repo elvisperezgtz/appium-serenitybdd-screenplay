@@ -22,9 +22,17 @@ Background:
     Then El deberia poder ver los detalles de la linea
     And el deberia salir de la sesion
 
-  #@LoginEditarOk
-  #Scenario : Inicio de sesión en Tigo en Línea App - Editar correo
-  #When El inicia sesion en la app por medio del correo electronico
+  @LoginEditarOk
+    Scenario: Inicio de sesión en Tigo en Línea App - Editar correo
+    When El selecciona ingresar con el correo tigoindra@gmail.com
+    And El edita el correo
+    And El inicia sesion por correo electronico
+      | correo                | contrasenia |
+      | tigoindra10@gmail.com | Tigo5555  |
+    And El selecciona la linea Prepago: 40186020
+    Then El deberia poder ver los detalles de la linea
+    And el deberia salir de la sesion
+
 
   @LoginCorreoInvalido
     Scenario: Inicio de sesión con correo inválido en Tigo en Línea App

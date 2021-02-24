@@ -12,7 +12,7 @@ public class LoginUI {
             .locatedBy("//android.widget.Button[@text='INGRESAR']");
     public final static Target CAMPO_CONTRASENIA = Target.the("editText correo")
             .locatedBy("//android.view.View[@resource-id='passwordInput']//android.widget.EditText");
-    public final static Target BOTON = Target.the("editText correo")
+    public final static Target BOTON_EDITAR_CORREO = Target.the("Botón editar correo")
             .locatedBy("//android.widget.EditText");
     public final static Target OLVIDO_CONTRASENIA = Target.the("¿Olvidaste tu contrasenia")
             .locatedBy("//*[@resource-id='forgotPasswordLbl']");

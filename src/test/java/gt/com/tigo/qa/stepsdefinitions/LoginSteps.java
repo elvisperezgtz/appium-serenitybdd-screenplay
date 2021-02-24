@@ -161,4 +161,20 @@ public class LoginSteps {
                 Matchers.is(true)));
     }
 
+    @And("^El edita el correo$")
+    public void elEditaElCorreo()
+    {
+        theActorInTheSpotlight().attemptsTo(
+            Editar.correo()
+        );
+    }
+
+    @When("^El inicia sesion por correo electronico$")
+    public void elIniciaSesionPorCorreoElectronico(List<Credenciales> credenciales)
+    {
+        theActorInTheSpotlight().attemptsTo(
+                Iniciar.laSesion(credenciales.get(0).getCorreo(), credenciales.get(0).getContrasenia())
+        );
+    }
+
 }

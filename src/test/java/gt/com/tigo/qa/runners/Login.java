@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         glue = "gt.com.tigo.qa.stepsdefinitions",
         snippets = SnippetType.CAMELCASE,
         features = "src\\test\\resources\\features\\login\\login.feature",
-        tags = "@LoginOTPInvalido"
+        tags = "@LoginEditarOk"
 )
 public class Login {
 }
