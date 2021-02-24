@@ -34,5 +34,9 @@ public class LoginUI {
             .locatedBy("//android.view.View[2]/android.widget.EditText");
     public final static Target BOTON_CONTINUAR_OTP = Target.the("Boton continuar")
             .locatedBy("//*[@resource-id=\"doOTPLoginBtn\"]");
+    public final static Target MENSAJE_CORREO_INVALIDO = Target.the("Mensaje de correo invalido")
+            .locatedBy("//*[@resource-id=\"errorMessageEmailPhone\"]");
+    public final static Target MENSAJE_CONTRASENIA_INVALIDA = Target.the("Mensaje de contrasenia invalida")
+            .locatedBy("//*[@resource-id=\"errorMessageNotEmailPhone\"]");
 
 }

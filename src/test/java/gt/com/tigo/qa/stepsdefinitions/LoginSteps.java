@@ -7,6 +7,8 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import gt.com.tigo.qa.interactions.Abrir;
 import gt.com.tigo.qa.models.Credenciales;
+import gt.com.tigo.qa.questions.ElMensajeContraseniaInvalida;
+import gt.com.tigo.qa.questions.ElMensajeDeCorreoInvalido;
 import gt.com.tigo.qa.questions.ElMenuInferior;
 import gt.com.tigo.qa.tasks.*;
 import gt.com.tigo.qa.utils.correos.ManejadorDeCorreos;
@@ -85,9 +87,6 @@ public class LoginSteps {
 
     @Then("^El deberia poder ver los detalles de la linea$")
     public void elDeberiaPoderVerLosDetallesDeLaLinea() {
-//        theActorInTheSpotlight().attemptsTo(
-//                Ensure.that(HomeAppUI.ICONO_PERFIL.waitingForNoMoreThan(ofSeconds(10))).isDisplayed()
-//        );
         theActorInTheSpotlight().should(seeThat(ElMenuInferior.esVisible(), Matchers.is(true)));
     }
 
@@ -121,6 +120,26 @@ public class LoginSteps {
         theActorInTheSpotlight().attemptsTo(
                 Terminar.laSesion()
         );
+    }
+
+    @When("^El selecciona ingresar con el correo (.*)$")
+    public void elSeleccionaIngresarConElCorreoInvalido(String correoInvalido)
+    {
+        theActorInTheSpotlight().attemptsTo(
+                IngresarCorreo.invalido(correoInvalido)
+        );
+    }
+
+    @Then("^El deberia poder ver el mensaje de correo invalido$")
+    public void elDeberiaPoderVerElMensajeDeCorreoInvalido()
+    {
+        theActorInTheSpotlight().should(seeThat(ElMensajeDeCorreoInvalido.esVisible(),Matchers.is(true)));
+    }
+
+    @Then("^El deberia poder ver el mensaje de contrasenia invalida$")
+    public void elDeberiaPoderVerElMensajeDeContraseniaInvalida()
+    {
+        theActorInTheSpotlight().should(seeThat(ElMensajeContraseniaInvalida.esVisible(),Matchers.is(true)));
     }
 
 }
