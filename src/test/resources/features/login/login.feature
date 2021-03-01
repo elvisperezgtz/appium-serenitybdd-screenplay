@@ -1,4 +1,5 @@
 #encoding: utf-8
+ @login
 Feature: Login
   Como usuario deseo ingresar a Tigo en Línea App para gestionar mis líneas
 
@@ -12,7 +13,7 @@ Background:
     When El inicia sesion en la app por medio del correo electronico
       | correo                | contrasenia |
       | tigoindra10@gmail.com | Tigo5555  |
-    And El selecciona la linea Prepago 40097056
+    And El selecciona la linea Prepago 40186020
     Then El deberia poder ver los detalles de la linea
     And el deberia salir de la sesion
 

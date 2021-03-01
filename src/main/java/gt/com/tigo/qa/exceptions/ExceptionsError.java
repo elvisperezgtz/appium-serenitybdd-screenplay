@@ -12,9 +12,9 @@ public class ExceptionsError extends AssertionError {
 
     public static String falloEnLaAsersion(Boolean esperado) {
         if (esperado){
-            return String.format("Se esperaba que la asersion devolviera '%s', pero obtuvo", true);
+            return String.format("Se esperaba que la asersion devolviera 'Verdadero', pero obtuvo 'Falso'");
         }
-        return String.format("Se esperaba que la asersion devolviera'%s', pero obtuvo", false);
+        return String.format("Se esperaba que la asersion devolviera 'Falso', pero obtuvo 'Verdadero'");
     }
 
     public static String noSePudoValidarLosDetallesDeLaLinea() {
