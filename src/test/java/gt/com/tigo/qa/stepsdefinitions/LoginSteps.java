@@ -5,6 +5,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import gt.com.tigo.qa.exceptions.ExceptionsError;
 import gt.com.tigo.qa.interactions.Abrir;
 import gt.com.tigo.qa.models.Credenciales;
 import gt.com.tigo.qa.questions.ElMensajeContraseniaInvalida;
@@ -88,7 +89,8 @@ public class LoginSteps {
 
     @Then("^El deberia poder ver los detalles de la linea$")
     public void elDeberiaPoderVerLosDetallesDeLaLinea() {
-        theActorInTheSpotlight().should(seeThat(ElMenuInferior.esVisible(), Matchers.is(true)));
+        theActorInTheSpotlight().should(seeThat(ElMenuInferior.esVisible(), Matchers.is(true))
+                .orComplainWith(ExceptionsError.class, ExceptionsError.falloEnLaAsersion(true)));
     }
 
     @When("^El inicia sesion en la app por Header Enrichment$")
@@ -134,7 +136,8 @@ public class LoginSteps {
     @Then("^El deberia poder ver el mensaje de correo invalido$")
     public void elDeberiaPoderVerElMensajeDeCorreoInvalido()
     {
-        theActorInTheSpotlight().should(seeThat(ElMensajeDeCorreoInvalido.esVisible(),Matchers.is(true)));
+        theActorInTheSpotlight().should(seeThat(ElMensajeDeCorreoInvalido.esVisible(),Matchers.is(true))
+        .orComplainWith(ExceptionsError.class, ExceptionsError.falloEnLaAsersion(true)));
     }
 
     @Then("^El deberia poder ver el mensaje de contrasenia invalida$")
@@ -142,7 +145,8 @@ public class LoginSteps {
     {
         theActorInTheSpotlight().should(seeThat(
                 ElMensajeContraseniaInvalida.esVisible(),
-                Matchers.is(true)));
+                Matchers.is(true))
+        .orComplainWith(ExceptionsError.class, ExceptionsError.falloEnLaAsersion(true)));
     }
 
     @And("^El ingresa codigo OTP invalido$")
@@ -158,7 +162,8 @@ public class LoginSteps {
     {
         theActorInTheSpotlight().should(seeThat(
                 ElMensajeOTPInvalido.esVisible(),
-                Matchers.is(true)));
+                Matchers.is(true))
+                .orComplainWith(ExceptionsError.class, ExceptionsError.falloEnLaAsersion(true)));
     }
 
     @And("^El edita el correo$")

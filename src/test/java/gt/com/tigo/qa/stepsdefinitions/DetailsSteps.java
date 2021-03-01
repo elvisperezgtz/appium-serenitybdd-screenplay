@@ -2,18 +2,20 @@ package gt.com.tigo.qa.stepsdefinitions;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import gt.com.tigo.qa.exceptions.ExceptionsError;
 import gt.com.tigo.qa.questions.TituloDetalles;
 import gt.com.tigo.qa.userinterfaces.HomeAppUI;
 import gt.com.tigo.qa.userinterfaces.LoginUI;
 import gt.com.tigo.qa.utils.actions.actions;
 import gt.com.tigo.qa.utils.enums.Direccion;
-import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import org.hamcrest.Matchers;
 
+import static gt.com.tigo.qa.exceptions.ExceptionsError.falloEnLaAsersion;
 import static java.time.Duration.ofSeconds;
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class DetailsSteps {
@@ -97,7 +99,8 @@ public class DetailsSteps {
 
     @Then("^la app despliega Detalles de Llamadas$")
     public void laAppDespliegaDetallesDeLlamadas() {
-        theActorInTheSpotlight().should(GivenWhenThen.seeThat(TituloDetalles.esVisible(), Matchers.is(true)));
+        theActorInTheSpotlight().should(seeThat(TituloDetalles.esVisible(), Matchers.is(true))
+        .orComplainWith(ExceptionsError.class, falloEnLaAsersion(true)));
     }
 
     @When("^el usuario selecciona opcion Detalles de Internet$")
@@ -110,7 +113,8 @@ public class DetailsSteps {
     public void laAppDespliegaDetallesDeConsumoDeInternet() {
         theActorInTheSpotlight().attemptsTo(
                 Ensure.that(HomeAppUI.TITULO_DETALLES.waitingForNoMoreThan(ofSeconds(10))).isDisplayed());
-                theActorInTheSpotlight().should(GivenWhenThen.seeThat(TituloDetalles.esVisible(), Matchers.is(true)));
+                theActorInTheSpotlight().should(seeThat(TituloDetalles.esVisible(), Matchers.is(true))
+                .orComplainWith(ExceptionsError.class, falloEnLaAsersion(true)));
     }
 
     @When("^el usuario selecciona los Detalles de Mensajes$")
@@ -125,7 +129,8 @@ public class DetailsSteps {
     public void laAppDespliegaDetallesDeConsumoDeMensajes() {
         theActorInTheSpotlight().attemptsTo(
                 Ensure.that(HomeAppUI.TITULO_DETALLES.waitingForNoMoreThan(ofSeconds(10))).isDisplayed());
-        theActorInTheSpotlight().should(GivenWhenThen.seeThat(TituloDetalles.esVisible(), Matchers.is(true)));
+        theActorInTheSpotlight().should(seeThat(TituloDetalles.esVisible(), Matchers.is(true))
+        .orComplainWith(ExceptionsError.class, falloEnLaAsersion(true)));
         }
 }
 
