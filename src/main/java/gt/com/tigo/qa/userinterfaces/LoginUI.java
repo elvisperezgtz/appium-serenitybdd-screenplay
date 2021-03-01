@@ -8,9 +8,9 @@ public class LoginUI {
             .locatedBy("//android.widget.Button[contains(@text,'INGRESAR CON CORREO')]");
     public final static Target CAMPO_CORREO = Target.the("Campo correo")
             .locatedBy("//android.widget.EditText");
-    public final static Target BOTON_INGRESAR = Target.the("editText correo")
+    public final static Target BOTON_INGRESAR = Target.the("Boton ingresar")
             .locatedBy("//android.widget.Button[@text='INGRESAR']");
-    public final static Target CAMPO_CONTRASENIA = Target.the("editText correo")
+    public final static Target CAMPO_CONTRASENIA = Target.the("Campo contraseña")
             .locatedBy("//android.view.View[@resource-id='passwordInput']//android.widget.EditText");
     public final static Target BOTON_EDITAR_CORREO = Target.the("Botón editar correo")
             .locatedBy("//android.widget.EditText");

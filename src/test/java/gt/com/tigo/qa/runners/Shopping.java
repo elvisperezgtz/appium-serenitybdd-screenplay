@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         glue = "gt.com.tigo.qa.stepsdefinitions",
         snippets = SnippetType.CAMELCASE,
         features = "src/test/resources/features/login/shopping.feature",
-        tags = "@CompraPaqueteMensajes"
+        tags = "@CompraPaqueteInternet"
 )
 public class Shopping {
 }

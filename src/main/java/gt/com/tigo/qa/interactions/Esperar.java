@@ -18,7 +18,7 @@ public class Esperar implements Interaction {
     public Esperar(int segundos) {this.segundos = segundos;}
 
     @Override
-    @Step("{0} espera por la lista de lineas")
+    @Step("{0} espera por el elemento durante #segundos segundos")
     public <T extends Actor> void performAs(T actor) {
         WebDriver driver = ((WebDriverFacade) BrowseTheWeb.as(actor).getDriver()).getProxiedDriver();
         ((AndroidDriver)driver).manage().timeouts().implicitlyWait(segundos,TimeUnit.SECONDS);
